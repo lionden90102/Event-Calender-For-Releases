@@ -1,0 +1,46 @@
+ body {
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+  }
+h1 {
+    text-align: center;
+}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Needed for tooltip positioning */
+  }
+  th {
+    background-color: #444; /* Darker background for header */
+  }
+  td:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+  .tooltip {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%; /* Position below the cell */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  td:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+  }
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: red; /* Change color as needed */
+    border-radius: 50%;
+    margin-left: 5px; /* Space between date and dot */
+  }
